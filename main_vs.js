@@ -9,7 +9,7 @@ var movieSelector ={
 
   initStyling: function() {
 
-    movieSelector.renderMovies();
+    movieSelector.renderMovies(movieData);
 
   },
 
@@ -26,7 +26,7 @@ renderMovies: function (movieObject) {
   if(val.mpaa_rating === "PG" || "PG-13") {
     return val.title;}
   };
-   _.each(moviedata,movieSelector.selectRating);
+   _.each(movieObject,movieSelector.selectRating);
 
    console.log(movieObject);
 }
