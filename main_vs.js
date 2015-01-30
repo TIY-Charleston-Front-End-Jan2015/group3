@@ -26,7 +26,7 @@ renderMovies: function (movieObject) {
   if(val.mpaa_rating === "PG" || "PG-13") {
     return val.title;}
   };
-   _.each(movieObject,movieSelector.selectRating);
+   _.each(movieObject,selectRating);
 
    console.log(movieObject);
 }
