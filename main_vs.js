@@ -4,32 +4,32 @@ var movieSelector ={
   init: function() {
 
     movieSelector.initStyling();
-    movieSelector.initEvents();
+    // movieSelector.initEvents();
   },
 
   initStyling: function() {
 
     movieSelector.renderMovies();
-    movieSelector.renderAllMovies(moviedata);
+
   },
 
-initEVents: function() {
-
-},
+// initEVents: function() {
+//
+// },
 
 
 
 
 renderMovies: function (movieObject) {
 
-  var movieTmpl = _.template(templates.movieInfo);
-  $("body").append(repoTmpl(movieObject));
-},
+  var selectRating = function(val) {
+  if(val.mpaa_rating === "PG" || "PG-13") {
+    return val.title;}
+  };
+   _.each(moviedata,movieSelector.selectRating);
 
-renderAllMovies: function (movieArray) {
-
-  _.each(movieArray,movieSelector.renderMovies);
-},
+   console.log(movieObject);
+}
 
 };
 
