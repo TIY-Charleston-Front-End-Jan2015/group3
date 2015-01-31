@@ -9,7 +9,7 @@ var questions1Data =
 ]
 
 var questions2Data = [
-  {"question": "Who are you in the mood for?",
+  {"question": "What are you in the mood for?",
     "A": "A. Excitement!",
     "B": "B. Love, hugs, and froo froo stuff.",
     "C": "C. I want to pee in my pants. I put on Depends.",
@@ -42,5 +42,19 @@ var mpaaData = {
       "All": "Hobbit, Taken3"
 
 
+}
 
+var genreData = {
+    "Adventure": "Adventure Movies",
+    "Romance": "Romance Movies",
+    "Thriller": "Horror/Thriller Movies",
+    "Comedy": "Comedy Movies"
+
+}
+
+var castData = {
+    "yesCostner": "Black and White",
+    "noCostner": "Taken3, Paddington, Wedding Ringer",
+    "yesLiam": "Taken3",
+    "noLiam": "Paddington, Black and White"
 }

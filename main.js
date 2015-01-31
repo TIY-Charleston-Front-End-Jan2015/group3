@@ -1,17 +1,21 @@
 var mpaaChoice ="";
+var movieGenre = "";
+var costner = "";
+var liam ="";
 
 var flixPage = {
 
 init: function() {
     flixPage.initStyling();
     flixPage.initEvents();
+    flixPage.initGenre();
+    flixPage.initCostner();
+    flixPage.initLiam();
 
   },
 
 initStyling: function() {
-    flixPage.question1();
-    flixPage.question2();
-
+  flixPage.question1();
 
     console.log("called init styling");
   },
@@ -68,27 +72,35 @@ $('.D1').click(function (event){
 /// second question asked. filtering out Genre
 
 initGenre: function () {
-var movieGenre = "";
+
+
 
 
     $('.A2').click(function(event){
       event.preventDefault();
+      console.log("A");
+
       movieGenre = genreData.Adventure;
+      console.log(movieGenre);
+
 });
       $('.B2').click(function(event){
         event.preventDefault();
         movieGenre = genreData.Romance;
+        console.log(movieGenre);
 });
       $('.C2').click(function(event){
         event.preventDefault();
         movieGenre = genreData.Thriller;
+        console.log(movieGenre);
 });
         $('.D2').click(function(event){
         event.preventDefault();
          movieGenre = genreData.Comedy;
+         console.log(movieGenre);
 });
 
-
+flixPage.question3();
 
 
 
@@ -98,28 +110,33 @@ var movieGenre = "";
 
 initCostner: function () {
 
-var costner = "";
 
-$('.C1').click(function(event){
+$('.A3').click(function(event){
   event.preventDefault();
-  costner = castData.nocostner;
+  console.log("A");
+
+  costner = castData.noCostner;
+  console.log(costner);
 });
 
-  $('.C2').click(function(event){
+  $('.B3').click(function(event){
     event.preventDefault();
-    costner = castData.yescostner;
+    costner = castData.yesCostner;
+    console.log(costner);
 });
 
   $('.C3').click(function(event){
     event.preventDefault();
-    costner = castData.nocostner;
+    costner = castData.noCostner;
+    console.log(costner);
 });
-    $('.C4').click(function(event){
+    $('.D3').click(function(event){
     event.preventDefault();
-    costner = castData.yescostner;
+    costner = castData.yesCostner;
+    console.log(costner);
 });
 
-var movieq3 = "";
+flixPage.question4();
 
 
 },
@@ -128,21 +145,25 @@ initLiam: function () {
 
 var liam = "";
 
-$('.D1').click(function(event){
+$('.A4').click(function(event){
   event.preventDefault();
-  costner = castData.noliam;
+  liam = castData.noLiam;
+  console.log(liam);
 });
-  $('.D2').click(function(event){
+  $('.B4').click(function(event){
     event.preventDefault();
-    costner = castData.yesliam;
+    liam = castData.yesLiam;
+    console.log(liam);
   });
-  $('.D3').click(function(event){
+  $('.C4').click(function(event){
     event.preventDefault();
-    costner = castData.noliam;
+    liam = castData.noLiam;
+    console.log(liam);
   });
     $('.D4').click(function(event){
     event.preventDefault();
-    costner = castData.noliam;
+    liam = castData.noLiam;
+    console.log(liam);
   });
 
 var movieq4 = "";
@@ -176,7 +197,7 @@ console.log(html);
 },
 
 question3: function () {
-  var questTmpl = _.template(templates.question1);
+  var questTmpl = _.template(templates.question3);
   var html = "";
   _.each(questions3Data, function (currentItem, index, array){
   html += questTmpl(currentItem);
@@ -184,10 +205,11 @@ question3: function () {
   $("section").append(html);
 console.log(html);
 },
+
 question4: function () {
-  var questTmpl = _.template(templates.question1);
+  var questTmpl = _.template(templates.question4);
   var html = "";
-  _.each(questions1Data, function (currentItem, index, array){
+  _.each(questions4Data, function (currentItem, index, array){
   html += questTmpl(currentItem);
 });
   $("section").append(html);
