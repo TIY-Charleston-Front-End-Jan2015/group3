@@ -9,7 +9,7 @@ var flixPage = {
 init: function() {
     flixPage.initStyling();
     flixPage.initEvents();
-    flixPage.initGenre();
+    ////flixPage.initGenre();
     flixPage.initCostner();
     flixPage.initLiam();
 
@@ -17,7 +17,9 @@ init: function() {
 
 initStyling: function() {
   flixPage.question1();
-
+  flixPage.question2();
+  flixPage.question3();
+  flixPage.question4();
     console.log("called init styling");
   },
 
@@ -30,7 +32,7 @@ initEvents: function () {
   $('.B1').click(function (event){
     event.preventDefault();
     $(".question1").hide();
-    flixPage.question2();
+
     $(".question2").addClass("active");
     _.each(movieData, function(currentItem){
       if (currentItem.mpaa === "PG-13"){
@@ -39,23 +41,20 @@ initEvents: function () {
         //console.log(moviePile);
    };
 
-
     });
-
-
 });
 
 
 $('.A1').click(function (event){
   event.preventDefault();
   $(".question1").hide();
-  flixPage.question2();
+
   $(".question2").addClass("active");
   _.each(movieData, function(currentItem){
-    if (currentItem.mpaa != "PG-13"){
-      moviePile.push(currentItem);
+
+    moviePile.push(currentItem);
       console.log(moviePile);
- };
+
 
   });
 
@@ -64,52 +63,46 @@ $('.A1').click(function (event){
 $('.C1').click(function (event){
   event.preventDefault();
   $(".question1").hide();
-  flixPage.question2();
+
   $(".question2").addClass("active");
   _.each(movieData, function(currentItem){
-    if (currentItem.mpaa != "PG-13"){
+
       moviePile.push(currentItem);
       console.log(moviePile);
-  };
-
-  });
 
 });
+
+});
+
 $('.D1').click(function (event){
   event.preventDefault();
   $(".question1").hide();
-  flixPage.question2();
+
   $(".question2").addClass("active");
   _.each(movieData, function(currentItem){
-    if (currentItem.mpaa != "PG-13"){
+
       moviePile.push(currentItem);
       console.log(moviePile);
-  };
-
-  });
 
 
 });
 
- },
+ }),
 
-initGenre: function () {
+
 
   $('.A2').click(function(event){
     event.preventDefault();
     console.log("A2");
-    $(".question2").addClass("hide");
+    $(".question2").hide();
     flixPage.question3();
     $(".question3").addClass("active");
   _.each(moviePile, function(currentItem){
 
     if (currentItem.genre === "Adventure"){
-      moviePile.push(currentItem);
+      moviePile2.push(currentItem);
 
-    }else if (currentItem.genre !="Adventure"){
-      moviePile.remove(currentItem);
-
-    console.log(moviePile);
+    console.log(moviePile2);
 
 };
 
@@ -136,7 +129,7 @@ initGenre: function () {
          console.log(movieGenre);
 });
 
-flixPage.question3();
+
 
 
 
@@ -202,13 +195,12 @@ $('.A4').click(function(event){
     console.log(liam);
   });
 
-var movieq4 = "";
+
+
+
 
 
 },
-
-
-
 
 
 

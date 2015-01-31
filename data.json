@@ -1,4 +1,7 @@
 var moviePile= [];
+var moviePile2 = [];
+var moviePile3 = [];
+var moviePile4 = [];
 
 var questions1Data =
 [
