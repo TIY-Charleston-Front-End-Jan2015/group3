@@ -63,8 +63,14 @@ templates.question4 = [
 ].join("");
 
 
-templates.finallist = [
+templates.movieStack = [
+"<h3> <%= img %> </h3>",
+"<h4> <%= mpaa %> </h4>",
+"<h5> <%= synopsis%> </h5>",
+"<h6> <%= cast %> </h6>",
+"<h7> <%= reviews %> </h7>",
 
 
 
-]
+
+].join("");

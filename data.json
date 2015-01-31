@@ -36,7 +36,6 @@ var questions4Data = [
 
 ]
 
-
 var mpaaData = {
     "Kids": "Black and White, Paddington",
       "All": "Hobbit, Taken3"
@@ -58,3 +57,27 @@ var castData = {
     "yesLiam": "Taken3",
     "noLiam": "Paddington, Black and White"
 }
+
+var movieData = [
+
+{  "id": "771383833",
+ "title": "Black or White",
+ "year": 2015,
+ "mpaa": "PG-13",
+ "runtime": 121,
+ "critics_consensus": "",
+
+},
+
+{
+"id": "771355515",
+ "title": "Project Almanac",
+ "year": 2015,
+ "mpaa": "R",
+ "runtime": 120,
+ "critics_consensus": "",
+
+
+},
+
+]

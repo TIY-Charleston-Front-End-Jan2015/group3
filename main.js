@@ -2,6 +2,7 @@ var mpaaChoice ="";
 var movieGenre = "";
 var costner = "";
 var liam ="";
+var moviePile="";
 
 var flixPage = {
 
@@ -24,16 +25,24 @@ initStyling: function() {
 
 initEvents: function () {
 // first question asked. filtering out Kids movies
+ _.each(movieData, function(currentItem){
+   if (currentItem.mpaa === "PG-13"){
+     var moviePile= currentItem
+};
+   console.log(moviePile);
+ });
 
   $('.B1').click(function (event){
     event.preventDefault();
         console.log("B");
 
       mpaaChoice = mpaaData.Kids;
-      console.log(mpaaChoice);
+      console.log(mpaaChoice)
+
 
 
 });
+
 
 $('.A1').click(function (event){
   event.preventDefault();
