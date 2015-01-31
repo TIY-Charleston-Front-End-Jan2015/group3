@@ -28,3 +28,16 @@ h2 {
   margin: 0px 0px 0px 550px;
 
 }
+
+.question2, .question3, .question4 {
+  display: none;
+
+}
+
+.active {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

@@ -1,3 +1,5 @@
+var moviePile= [];
+
 var questions1Data =
 [
   {"question": "Who are you watching the movie with?",
@@ -63,6 +65,7 @@ var movieData = [
 {  "id": "771383833",
  "title": "Black or White",
  "year": 2015,
+ "genre": "Romance",
  "mpaa": "PG-13",
  "runtime": 121,
  "critics_consensus": "",
@@ -72,6 +75,28 @@ var movieData = [
 {
 "id": "771355515",
  "title": "Project Almanac",
+ "year": 2015,
+ "genre": "Adventure",
+ "mpaa": "R",
+ "runtime": 120,
+ "critics_consensus": "",
+
+
+},
+{  "id": "771383833",
+ "title": "Paddington",
+ "year": 2015,
+ "genre": "Adventure",
+ "mpaa": "PG-13",
+ "runtime": 121,
+ "critics_consensus": "",
+
+},
+
+{
+"id": "771355515",
+ "title": "Taken3",
+ "genre": "PG-13",
  "year": 2015,
  "mpaa": "R",
  "runtime": 120,

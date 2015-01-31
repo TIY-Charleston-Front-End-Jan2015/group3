@@ -1,7 +1,7 @@
 var templates = {};
 
 templates.question1 = [
-
+  "<div class='question1'>",
   "<h2> <%= question %> </h2>",
   "<p><button class='A1'>A</button>",
   " <%= A %> </p>",
@@ -11,12 +11,12 @@ templates.question1 = [
   " <%= C %> </p>",
   "<p><button class='D1'>D</button>",
   " <%= D %> </p>",
-
+  "</div>"
 
 ].join("");
 
 templates.question2 = [
-
+  "<div class='question2'>",
   "<h2> <%= question %> </h2>",
   "<p><button class='A2'>A</button>",
   " <%= A %> </p>",
@@ -26,13 +26,13 @@ templates.question2 = [
   " <%= C %> </p>",
   "<p><button class='D2'>D</button>",
   " <%= D %> </p>",
-
+  "</div>"
 
 ].join("");
 
 
 templates.question3 = [
-
+"<div class='question3'>",
   "<h2> <%= question %> </h2>",
   "<p><button class='A3'>A</button>",
   " <%= A %> </p>",
@@ -42,13 +42,13 @@ templates.question3 = [
   " <%= C %> </p>",
   "<p><button class='D3'>D</button>",
   " <%= D %> </p>",
-
+  "</div>"
 
 ].join("");
 
 
 templates.question4 = [
-
+"<div class='question4'>",
   "<h2> <%= question %> </h2>",
   "<p><button class='A4'>A</button>",
   " <%= A %> </p>",
@@ -58,7 +58,7 @@ templates.question4 = [
   " <%= C %> </p>",
   "<p><button class='D4'>D</button>",
   " <%= D %> </p>",
-
+  "</div>"
 
 ].join("");
 

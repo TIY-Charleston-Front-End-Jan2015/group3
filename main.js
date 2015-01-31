@@ -2,7 +2,7 @@ var mpaaChoice ="";
 var movieGenre = "";
 var costner = "";
 var liam ="";
-var moviePile="";
+
 
 var flixPage = {
 
@@ -25,20 +25,22 @@ initStyling: function() {
 
 initEvents: function () {
 // first question asked. filtering out Kids movies
- _.each(movieData, function(currentItem){
-   if (currentItem.mpaa === "PG-13"){
-     var moviePile= currentItem
-};
-   console.log(moviePile);
- });
+
 
   $('.B1').click(function (event){
     event.preventDefault();
-        console.log("B");
+    $(".question1").hide();
+    flixPage.question2();
+    $(".question2").addClass("active");
+    _.each(movieData, function(currentItem){
+      if (currentItem.mpaa === "PG-13"){
 
-      mpaaChoice = mpaaData.Kids;
-      console.log(mpaaChoice)
+        moviePile.push(currentItem);
+        //console.log(moviePile);
+   };
 
+
+    });
 
 
 });
@@ -46,53 +48,78 @@ initEvents: function () {
 
 $('.A1').click(function (event){
   event.preventDefault();
-      console.log("A");
+  $(".question1").hide();
+  flixPage.question2();
+  $(".question2").addClass("active");
+  _.each(movieData, function(currentItem){
+    if (currentItem.mpaa != "PG-13"){
+      moviePile.push(currentItem);
+      console.log(moviePile);
+ };
 
-    mpaaChoice = mpaaData.All;
-    console.log(mpaaChoice);
-
+  });
 
 });
 
 $('.C1').click(function (event){
   event.preventDefault();
-      console.log("B");
+  $(".question1").hide();
+  flixPage.question2();
+  $(".question2").addClass("active");
+  _.each(movieData, function(currentItem){
+    if (currentItem.mpaa != "PG-13"){
+      moviePile.push(currentItem);
+      console.log(moviePile);
+  };
 
-    mpaaChoice = mpaaData.All;
-    console.log(mpaaChoice);
-
+  });
 
 });
 $('.D1').click(function (event){
   event.preventDefault();
-      console.log("B");
+  $(".question1").hide();
+  flixPage.question2();
+  $(".question2").addClass("active");
+  _.each(movieData, function(currentItem){
+    if (currentItem.mpaa != "PG-13"){
+      moviePile.push(currentItem);
+      console.log(moviePile);
+  };
 
-    mpaaChoice = mpaaData.All;
-    console.log(mpaaChoice);
+  });
 
 
 });
 
-       console.log("initevents");
-       flixPage.question2();
-
-    },
-
-/// second question asked. filtering out Genre
+ },
 
 initGenre: function () {
 
+  $('.A2').click(function(event){
+    event.preventDefault();
+    console.log("A2");
+    $(".question2").addClass("hide");
+    flixPage.question3();
+    $(".question3").addClass("active");
+  _.each(moviePile, function(currentItem){
 
+    if (currentItem.genre === "Adventure"){
+      moviePile.push(currentItem);
 
+    }else if (currentItem.genre !="Adventure"){
+      moviePile.remove(currentItem);
 
-    $('.A2').click(function(event){
-      event.preventDefault();
-      console.log("A");
+    console.log(moviePile);
 
-      movieGenre = genreData.Adventure;
-      console.log(movieGenre);
+};
 
 });
+
+});
+
+
+
+
       $('.B2').click(function(event){
         event.preventDefault();
         movieGenre = genreData.Romance;
