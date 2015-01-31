@@ -1,3 +1,6 @@
+var pgRatingMovies = [];
+var rRatingMovies = [];
+
 var movieSelector ={
 
 
@@ -9,7 +12,7 @@ var movieSelector ={
 
   initStyling: function() {
 
-    movieSelector.renderMovies(movieData);
+    movieSelector.renderMovies(moviedata);
 
   },
 
@@ -18,20 +21,24 @@ var movieSelector ={
 // },
 
 
+selectRating: function(val) {
+  if(val.mpaa_rating === "PG" || val.mpaa_rating ==="PG-13") {
+    pgRatingMovies.push(val.title);
 
+  } else if (val.mpaa_rating === "R") {
+    rRatingMovies.push(val.title);
+  }
+},
 
 renderMovies: function (movieObject) {
+  console.log(movieObject);
 
-  var selectRating = function(val) {
-  if(val.mpaa_rating === "PG" || "PG-13") {
-    return val.title;}
-  };
-   _.each(movieObject,selectRating);
+   _.each(movieObject,movieSelector.selectRating);
 
-   console.log(movieObject);
-}
 
+ }
 };
+
 
 
 
