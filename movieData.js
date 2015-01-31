@@ -3,10 +3,12 @@ var moviedata =[
 {
   "id": "771383833",
   "title": "Black or White",
+  "genre": [
+  "Drama"
+  ],
   "year": 2015,
   "mpaa_rating": "PG-13",
   "runtime": 121,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-30"
   },
@@ -23,6 +25,8 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/88/11188845_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/88/11188845_tmb.jpg"
   },
+  "Kevin Costner": "yes",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Kevin Costner",
@@ -60,10 +64,12 @@ var moviedata =[
 {
   "id": "771355515",
   "title": "Project Almanac",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2015,
   "mpaa_rating": "PG-13",
   "runtime": 120,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-30"
   },
@@ -80,6 +86,8 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/15/11181569_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/15/11181569_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Sophia Black-D'Elia",
@@ -117,6 +125,9 @@ var moviedata =[
 {
   "id": "771361913",
   "title": "The Loft",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 104,
@@ -136,6 +147,8 @@ var moviedata =[
     "detailed": "http://content8.flixster.com/movie/11/18/90/11189046_tmb.jpg",
     "original": "http://content8.flixster.com/movie/11/18/90/11189046_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "James Marsden",
@@ -173,10 +186,12 @@ var moviedata =[
 {
   "id": "771387778",
   "title": "Cake",
+  "genre": [
+  "Drama"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 98,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-23"
   },
@@ -193,34 +208,24 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/88/11188877_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/88/11188877_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Jennifer Aniston",
-    "id": "162655148",
-    "characters": [
-    "Claire"
-    ]
+    "id": "162655148"
   },
   {
     "name": "Anna Kendrick",
-    "id": "528367112",
-    "characters": [
-    "Nina"
-    ]
+    "id": "528367112"
   },
   {
     "name": "Adriana Barraza",
-    "id": "545585886",
-    "characters": [
-    "Silvana"
-    ]
+    "id": "545585886"
   },
   {
     "name": "Sam Worthington",
-    "id": "326396777",
-    "characters": [
-    "Roy"
-    ]
+    "id": "326396777"
   },
   {
     "name": "Chris Messina",
@@ -243,9 +248,11 @@ var moviedata =[
   "id": "771365002",
   "title": "Mortdecai",
   "year": 2015,
+  "genre": [
+  "Comedy"
+  ],
   "mpaa_rating": "R",
   "runtime": 106,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-23"
   },
@@ -262,41 +269,28 @@ var moviedata =[
     "detailed": "http://content6.flixster.com/movie/11/18/14/11181488_tmb.jpg",
     "original": "http://content6.flixster.com/movie/11/18/14/11181488_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Johnny Depp",
-    "id": "162652817",
-    "characters": [
-    "Charles Mortdecai"
-    ]
+    "id": "162652817"
   },
   {
     "name": "Gwyneth Paltrow",
-    "id": "162653966",
-    "characters": [
-    "Johanna"
-    ]
+    "id": "162653966"
   },
   {
     "name": "Ewan McGregor",
-    "id": "162652152",
-    "characters": [
-    "Martland"
-    ]
+    "id": "162652152"
   },
   {
     "name": "Olivia Munn",
-    "id": "770797421",
-    "characters": [
-    "Georgina"
-    ]
+    "id": "770797421"
   },
   {
     "name": "Jeff Goldblum",
-    "id": "162668455",
-    "characters": [
-    "Krampf"
-    ]
+    "id": "162668455"
   }
   ],
   "alternate_ids": {
@@ -314,10 +308,12 @@ var moviedata =[
 {
   "id": "771403070",
   "title": "Strange Magic",
+  "genre": [
+  "Family"
+  ],
   "year": 2015,
   "mpaa_rating": "PG",
   "runtime": 99,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-23"
   },
@@ -334,6 +330,8 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/91/11189181_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/91/11189181_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Alan Cumming",
@@ -371,10 +369,12 @@ var moviedata =[
 {
   "id": "771370937",
   "title": "The Boy Next Door",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 91,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-23"
   },
@@ -391,41 +391,28 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/18/11/11181119_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/18/11/11181119_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Thomas Jane",
-    "id": "162688276",
-    "characters": [
-    "Roy"
-    ]
+    "id": "162688276"
   },
   {
     "name": "Brett Granstaff",
-    "id": "770696527",
-    "characters": [
-    "James"
-    ]
+    "id": "770696527"
   },
   {
     "name": "Bruce Willis",
-    "id": "162652509",
-    "characters": [
-    "Julian Michaels"
-    ]
+    "id": "162652509"
   },
   {
     "name": "Charlotte Kirk",
-    "id": "771562075",
-    "characters": [
-    "Melissa"
-    ]
+    "id": "771562075"
   },
   {
     "name": "Ryan O'Nan",
-    "id": "770834046",
-    "characters": [
-    "Det. Matthews"
-    ]
+    "id": "770834046"
   }
   ],
   "alternate_ids": {
@@ -443,10 +430,12 @@ var moviedata =[
 {
   "id": "771357000",
   "title": "American Sniper",
+  "genre": [
+  "Thriller/Action", "Drama"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 134,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-16"
   },
@@ -463,41 +452,28 @@ var moviedata =[
     "detailed": "http://content8.flixster.com/movie/11/18/08/11180834_tmb.jpg",
     "original": "http://content8.flixster.com/movie/11/18/08/11180834_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Bradley Cooper",
-    "id": "351525448",
-    "characters": [
-    "Chris Kyle"
-    ]
+    "id": "351525448"
   },
   {
     "name": "Luke Grimes",
-    "id": "770791372",
-    "characters": [
-    "Marc Lee"
-    ]
+    "id": "770791372"
   },
   {
     "name": "Sienna Miller",
-    "id": "335716430",
-    "characters": [
-    "Taya"
-    ]
+    "id": "335716430"
   },
   {
     "name": "Kyle Gallner",
-    "id": "371353852",
-    "characters": [
-    "Goat-Winston"
-    ]
+    "id": "371353852"
   },
   {
     "name": "Ben Reed",
-    "id": "770768775",
-    "characters": [
-    "Wayne Kyle"
-    ]
+    "id": "770768775"
   }
   ],
   "alternate_ids": {
@@ -515,10 +491,12 @@ var moviedata =[
 {
   "id": "771366608",
   "title": "Paddington",
+  "genre": [
+  "Family"
+  ],
   "year": 2015,
   "mpaa_rating": "PG",
   "runtime": 95,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-16"
   },
@@ -535,6 +513,8 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/18/90/11189067_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/18/90/11189067_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Hugh Bonneville",
@@ -571,10 +551,12 @@ var moviedata =[
 {
   "id": "771373844",
   "title": "The Wedding Ringer",
+  "genre": [
+  "Comedy", "Romance"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 101,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-16"
   },
@@ -591,41 +573,28 @@ var moviedata =[
     "detailed": "http://content8.flixster.com/movie/11/18/16/11181602_tmb.jpg",
     "original": "http://content8.flixster.com/movie/11/18/16/11181602_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Kevin Hart",
-    "id": "770671077",
-    "characters": [
-    "Jimmy Callahan"
-    ]
+    "id": "770671077"
   },
   {
     "name": "Josh Gad",
-    "id": "770683794",
-    "characters": [
-    "Doug Harris"
-    ]
+    "id": "770683794"
   },
   {
     "name": "Affion Crockett",
-    "id": "770671599",
-    "characters": [
-    "Reggie/Drysdale"
-    ]
+    "id": "770671599"
   },
   {
     "name": "Kaley Cuoco-Sweeting",
-    "id": "771514334",
-    "characters": [
-    "Gretchen Palmer"
-    ]
+    "id": "771514334"
   },
   {
     "name": "Jorge Garcia",
-    "id": "309887152",
-    "characters": [
-    "Lurch/Garvey"
-    ]
+    "id": "309887152"
   }
   ],
   "alternate_ids": {
@@ -643,10 +612,12 @@ var moviedata =[
 {
   "id": "771373945",
   "title": "Taken 3",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2015,
   "mpaa_rating": "PG-13",
   "runtime": 93,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-09"
   },
@@ -663,41 +634,28 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/08/11180817_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/08/11180817_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "yes",
   "abridged_cast": [
   {
     "name": "Liam Neeson",
-    "id": "162652242",
-    "characters": [
-    "Bryan Mills"
-    ]
+    "id": "162652242"
   },
   {
     "name": "Maggie Grace",
-    "id": "162654594",
-    "characters": [
-    "Kim"
-    ]
+    "id": "162654594"
   },
   {
     "name": "Forest Whitaker",
-    "id": "162662640",
-    "characters": [
-    "Franck Dotzier"
-    ]
+    "id": "162662640"
   },
   {
     "name": "Famke Janssen",
-    "id": "162669246",
-    "characters": [
-    "Lenore"
-    ]
+    "id": "162669246"
   },
   {
     "name": "Dougray Scott",
-    "id": "162652857",
-    "characters": [
-    "Stuart St. John"
-    ]
+    "id": "162652857"
   }
   ],
   "alternate_ids": {
@@ -714,10 +672,12 @@ var moviedata =[
 {
   "id": "771373530",
   "title": "A Most Violent Year",
+  "genre": [
+  "Thriller/Action", "Drama"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 110,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-31"
   },
@@ -734,41 +694,28 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/90/11189069_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/90/11189069_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Oscar Isaac",
-    "id": "364655827",
-    "characters": [
-    "Abel Morales"
-    ]
+    "id": "364655827"
   },
   {
     "name": "Jessica Chastain",
-    "id": "770760183",
-    "characters": [
-    "Anna Morales"
-    ]
+    "id": "770760183"
   },
   {
     "name": "David Oyelowo",
-    "id": "162653706",
-    "characters": [
-    "Lawrence"
-    ]
+    "id": "162653706"
   },
   {
     "name": "Alessandro Nivola",
-    "id": "162653032",
-    "characters": [
-    "Andrew Walsh"
-    ]
+    "id": "162653032"
   },
   {
     "name": "Albert Brooks",
-    "id": "162655677",
-    "characters": [
-    "Andrew Walsh"
-    ]
+    "id": "162655677"
   }
   ],
   "alternate_ids": {
@@ -785,10 +732,12 @@ var moviedata =[
 {
   "id": "771383243",
   "title": "Selma",
+  "genre": [
+  "Drama"
+  ],
   "year": 2015,
   "mpaa_rating": "PG-13",
   "runtime": 127,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-09"
   },
@@ -805,28 +754,20 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/14/11181437_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/14/11181437_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "David Oyelowo",
-    "id": "162653706",
-    "characters": [
-    "Martin Luther King",
-    "Jr."
-    ]
+    "id": "162653706"
   },
   {
     "name": "Carmen Ejogo",
-    "id": "770716015",
-    "characters": [
-    "Coretta Scott King"
-    ]
+    "id": "770716015"
   },
   {
     "name": "Tom Wilkinson",
-    "id": "162653769",
-    "characters": [
-    "Lyndon Baines Johnson"
-    ]
+    "id": "162653769"
   },
   {
     "name": "Alessandro Nivola",
@@ -834,10 +775,7 @@ var moviedata =[
   },
   {
     "name": "Cuba Gooding Jr.",
-    "id": "162664235",
-    "characters": [
-    "Fred Gray"
-    ]
+    "id": "162664235"
   }
   ],
   "alternate_ids": {
@@ -854,10 +792,12 @@ var moviedata =[
 {
   "id": "771372271",
   "title": "The Imitation Game",
+  "genre": [
+  "Drama", "Thriller/Action"
+  ],
   "year": 2014,
   "mpaa_rating": "PG-13",
   "runtime": 114,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-11-28"
   },
@@ -874,41 +814,28 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/18/08/11180871_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/18/08/11180871_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Benedict Cumberbatch",
-    "id": "355028249",
-    "characters": [
-    "Alan Turing"
-    ]
+    "id": "355028249"
   },
   {
     "name": "Keira Knightley",
-    "id": "162654560",
-    "characters": [
-    "Joan Clarke"
-    ]
+    "id": "162654560"
   },
   {
     "name": "Allen Leech",
-    "id": "599791104",
-    "characters": [
-    "John Cairncross"
-    ]
+    "id": "599791104"
   },
   {
     "name": "Rory Kinnear",
-    "id": "770723110",
-    "characters": [
-    "Detective Robert Nock"
-    ]
+    "id": "770723110"
   },
   {
     "name": "Mark Strong (II)",
-    "id": "478055173",
-    "characters": [
-    "Stewart Menzies"
-    ]
+    "id": "478055173"
   }
   ],
   "alternate_ids": {
@@ -926,10 +853,12 @@ var moviedata =[
 {
   "id": "771372602",
   "title": "Birdman",
+  "genre": [
+  "Drama", "Comedy"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 119,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-10-17",
     "dvd": "2015-03-16"
@@ -947,41 +876,28 @@ var moviedata =[
     "detailed": "http://content8.flixster.com/movie/11/18/07/11180774_tmb.jpg",
     "original": "http://content8.flixster.com/movie/11/18/07/11180774_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Michael Keaton",
-    "id": "162652681",
-    "characters": [
-    "Riggan"
-    ]
+    "id": "162652681"
   },
   {
     "name": "Lindsay Duncan",
-    "id": "162759546",
-    "characters": [
-    "Tabitha"
-    ]
+    "id": "162759546"
   },
   {
     "name": "Zach Galifianakis",
-    "id": "162655230",
-    "characters": [
-    "Jake"
-    ]
+    "id": "162655230"
   },
   {
     "name": "Edward Norton",
-    "id": "162660884",
-    "characters": [
-    "Mike"
-    ]
+    "id": "162660884"
   },
   {
     "name": "Andrea Riseborough",
-    "id": "770704179",
-    "characters": [
-    "Laura"
-    ]
+    "id": "770704179"
   }
   ],
   "alternate_ids": {
@@ -999,10 +915,12 @@ var moviedata =[
 {
   "id": "771359314",
   "title": "Black Sea",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2015,
   "mpaa_rating": "R",
   "runtime": 115,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2015-01-23"
   },
@@ -1019,6 +937,8 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/18/13/11181391_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/18/13/11181391_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Jude Law",
@@ -1056,10 +976,12 @@ var moviedata =[
 {
   "id": "771356920",
   "title": "Into the Woods",
+  "genre": [
+  "Thriller/Action", "Comedy"
+  ],
   "year": 2014,
   "mpaa_rating": "PG",
   "runtime": 125,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-25",
     "dvd": "2015-03-24"
@@ -1077,41 +999,28 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/06/11180649_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/06/11180649_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Meryl Streep",
-    "id": "162654900",
-    "characters": [
-    "The Witch"
-    ]
+    "id": "162654900"
   },
   {
     "name": "Emily Blunt",
-    "id": "162685827",
-    "characters": [
-    "Baker's Wife"
-    ]
+    "id": "162685827"
   },
   {
     "name": "James Corden",
-    "id": "405587980",
-    "characters": [
-    "Baker"
-    ]
+    "id": "405587980"
   },
   {
     "name": "Anna Kendrick",
-    "id": "528367112",
-    "characters": [
-    "Cinderella"
-    ]
+    "id": "528367112"
   },
   {
     "name": "Chris Pine",
-    "id": "326393041",
-    "characters": [
-    "Cinderella's Prince"
-    ]
+    "id": "326393041"
   }
   ],
   "alternate_ids": {
@@ -1128,10 +1037,12 @@ var moviedata =[
 {
   "id": "771256839",
   "title": "Foxcatcher",
+  "genre": [
+  "Drama"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 130,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-11-14"
   },
@@ -1148,34 +1059,24 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/12/11181217_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/12/11181217_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Steve Carell",
-    "id": "162652665",
-    "characters": [
-    "John du Pont"
-    ]
+    "id": "162652665"
   },
   {
     "name": "Channing Tatum",
-    "id": "162661835",
-    "characters": [
-    "Mark Schultz"
-    ]
+    "id": "162661835"
   },
   {
     "name": "Mark Ruffalo",
-    "id": "162653904",
-    "characters": [
-    "David Schultz"
-    ]
+    "id": "162653904"
   },
   {
     "name": "Sienna Miller",
-    "id": "335716430",
-    "characters": [
-    "Nancy Schultz"
-    ]
+    "id": "335716430"
   },
   {
     "name": "Vanessa Redgrave",
@@ -1199,10 +1100,12 @@ var moviedata =[
 {
   "id": "771229367",
   "title": "Annie",
+  "genre": [
+  "Family"
+  ],
   "year": 2014,
   "mpaa_rating": "PG",
   "runtime": 118,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-19"
   },
@@ -1219,41 +1122,28 @@ var moviedata =[
     "detailed": "http://content6.flixster.com/movie/11/18/05/11180528_tmb.jpg",
     "original": "http://content6.flixster.com/movie/11/18/05/11180528_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Jamie Foxx",
-    "id": "162652975",
-    "characters": [
-    "Will Stacks"
-    ]
+    "id": "162652975"
   },
   {
     "name": "Quvenzhane Wallis",
-    "id": "771393410",
-    "characters": [
-    "Annie"
-    ]
+    "id": "771393410"
   },
   {
     "name": "Rose Byrne",
-    "id": "162699968",
-    "characters": [
-    "Grace"
-    ]
+    "id": "162699968"
   },
   {
     "name": "Bobby Cannavale",
-    "id": "162685850",
-    "characters": [
-    "Guy"
-    ]
+    "id": "162685850"
   },
   {
     "name": "Cameron Diaz",
-    "id": "162654443",
-    "characters": [
-    "Miss Hannigan"
-    ]
+    "id": "162654443"
   }
   ],
   "alternate_ids": {
@@ -1270,10 +1160,12 @@ var moviedata =[
 {
   "id": "771349839",
   "title": "Night at the Museum: Secret of the Tomb",
+  "genre": [
+  "Thriller/Action", "Comedy", "Family"
+  ],
   "year": 2014,
   "mpaa_rating": "PG",
   "runtime": 90,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-19"
   },
@@ -1290,41 +1182,28 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/18/13/11181399_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/18/13/11181399_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Ben Stiller",
-    "id": "162659371",
-    "characters": [
-    "Larry Daley"
-    ]
+    "id": "162659371"
   },
   {
     "name": "Robin Williams",
-    "id": "162652387",
-    "characters": [
-    "Teddy Roosevelt"
-    ]
+    "id": "162652387"
   },
   {
     "name": "Owen Wilson",
-    "id": "162652836",
-    "characters": [
-    "Jedediah"
-    ]
+    "id": "162652836"
   },
   {
     "name": "Dan Stevens (IV)",
-    "id": "770698532",
-    "characters": [
-    "Sir Lancelot"
-    ]
+    "id": "770698532"
   },
   {
     "name": "Ben Kingsley",
-    "id": "162653703",
-    "characters": [
-    "Merenkahre"
-    ]
+    "id": "162653703"
   }
   ],
   "alternate_ids": {
@@ -1341,10 +1220,12 @@ var moviedata =[
 {
   "id": "771181360",
   "title": "The Hobbit: The Battle of the Five Armies",
+  "genre": [
+  "Thriller/Action"
+  ],
   "year": 2014,
   "mpaa_rating": "PG-13",
   "runtime": 144,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-17"
   },
@@ -1361,41 +1242,28 @@ var moviedata =[
     "detailed": "http://content9.flixster.com/movie/11/17/97/11179703_tmb.jpg",
     "original": "http://content9.flixster.com/movie/11/17/97/11179703_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Martin Freeman (II)",
-    "id": "162652296",
-    "characters": [
-    "Bilbo Baggins"
-    ]
+    "id": "162652296"
   },
   {
     "name": "Ian McKellen",
-    "id": "162653241",
-    "characters": [
-    "Gandalf"
-    ]
+    "id": "162653241"
   },
   {
     "name": "Richard Armitage",
-    "id": "546952855",
-    "characters": [
-    "Thorin Oakenshield"
-    ]
+    "id": "546952855"
   },
   {
     "name": "Andy Serkis",
-    "id": "269710329",
-    "characters": [
-    "Gollum"
-    ]
+    "id": "269710329"
   },
   {
     "name": "Ian Holm",
-    "id": "162653927",
-    "characters": [
-    "Bilbo Baggins (old)"
-    ]
+    "id": "162653927"
   }
   ],
   "alternate_ids": {
@@ -1412,10 +1280,12 @@ var moviedata =[
 {
   "id": "771366367",
   "title": "The Theory of Everything",
+  "genre": [
+  "Drama", "Romance"
+  ],
   "year": 2014,
   "mpaa_rating": "PG-13",
   "runtime": 123,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-11-07",
     "dvd": "2015-02-17"
@@ -1433,41 +1303,28 @@ var moviedata =[
     "detailed": "http://content6.flixster.com/movie/11/18/02/11180224_tmb.jpg",
     "original": "http://content6.flixster.com/movie/11/18/02/11180224_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Eddie Redmayne",
-    "id": "358068995",
-    "characters": [
-    "Stephen Hawking"
-    ]
+    "id": "358068995"
   },
   {
     "name": "Felicity Jones",
-    "id": "770696159",
-    "characters": [
-    "Jane Wilde"
-    ]
+    "id": "770696159"
   },
   {
     "name": "David Thewlis",
-    "id": "162656526",
-    "characters": [
-    "Dennis Sciama"
-    ]
+    "id": "162656526"
   },
   {
     "name": "Emily Watson",
-    "id": "162654016",
-    "characters": [
-    "Beryl Wilde"
-    ]
+    "id": "162654016"
   },
   {
     "name": "Charlie Cox",
-    "id": "392799906",
-    "characters": [
-    "Jonathan Hellyer Jones"
-    ]
+    "id": "392799906"
   }
   ],
   "alternate_ids": {
@@ -1484,10 +1341,12 @@ var moviedata =[
 {
   "id": "771373530",
   "title": "A Most Violent Year",
+  "genre": [
+  "Thriller/Action", "Drama"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 110,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-31"
   },
@@ -1504,41 +1363,28 @@ var moviedata =[
     "detailed": "http://content7.flixster.com/movie/11/18/90/11189069_tmb.jpg",
     "original": "http://content7.flixster.com/movie/11/18/90/11189069_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Oscar Isaac",
-    "id": "364655827",
-    "characters": [
-    "Abel Morales"
-    ]
+    "id": "364655827"
   },
   {
     "name": "Jessica Chastain",
-    "id": "770760183",
-    "characters": [
-    "Anna Morales"
-    ]
+    "id": "770760183"
   },
   {
     "name": "David Oyelowo",
-    "id": "162653706",
-    "characters": [
-    "Lawrence"
-    ]
+    "id": "162653706"
   },
   {
     "name": "Alessandro Nivola",
-    "id": "162653032",
-    "characters": [
-    "Andrew Walsh"
-    ]
+    "id": "162653032"
   },
   {
     "name": "Albert Brooks",
-    "id": "162655677",
-    "characters": [
-    "Andrew Walsh"
-    ]
+    "id": "162655677"
   }
   ],
   "alternate_ids": {
@@ -1555,10 +1401,12 @@ var moviedata =[
 {
   "id": "771366595",
   "title": "Wild",
+  "genre": [
+  "Drama"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 115,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-12-03",
     "dvd": "2015-04-27"
@@ -1576,41 +1424,28 @@ var moviedata =[
     "detailed": "http://content8.flixster.com/movie/11/18/91/11189150_tmb.jpg",
     "original": "http://content8.flixster.com/movie/11/18/91/11189150_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Reese Witherspoon",
-    "id": "162653903",
-    "characters": [
-    "Cheryl"
-    ]
+    "id": "162653903"
   },
   {
     "name": "Thomas Sadoski",
-    "id": "770759213",
-    "characters": [
-    "Paul"
-    ]
+    "id": "770759213"
   },
   {
     "name": "Michiel Huisman",
-    "id": "682571065",
-    "characters": [
-    "Jonathan"
-    ]
+    "id": "682571065"
   },
   {
     "name": "W. Earl Brown",
-    "id": "335719400",
-    "characters": [
-    "Frank"
-    ]
+    "id": "335719400"
   },
   {
     "name": "Gaby Hoffmann",
-    "id": "162709080",
-    "characters": [
-    "Aimee"
-    ]
+    "id": "162709080"
   }
   ],
   "alternate_ids": {
@@ -1627,10 +1462,12 @@ var moviedata =[
 {
   "id": "771371883",
   "title": "Whiplash",
+  "genre": [
+  "Drama"
+  ],
   "year": 2014,
   "mpaa_rating": "R",
   "runtime": 106,
-  "critics_consensus": "",
   "release_dates": {
     "theater": "2014-10-10",
     "dvd": "2015-02-24"
@@ -1648,41 +1485,28 @@ var moviedata =[
     "detailed": "http://content6.flixster.com/movie/11/18/01/11180104_tmb.jpg",
     "original": "http://content6.flixster.com/movie/11/18/01/11180104_tmb.jpg"
   },
+  "Kevin Costner": "no",
+  "Liam Neeson": "no",
   "abridged_cast": [
   {
     "name": "Miles Teller",
-    "id": "771077409",
-    "characters": [
-    "Andrew Neyman"
-    ]
+    "id": "771077409"
   },
   {
     "name": "J.K. Simmons",
-    "id": "592170459",
-    "characters": [
-    "Terence Fletcher"
-    ]
+    "id": "592170459"
   },
   {
     "name": "Melissa Benoist",
-    "id": "770823727",
-    "characters": [
-    "Nicole"
-    ]
+    "id": "770823727"
   },
   {
     "name": "Paul Reiser",
-    "id": "162654031",
-    "characters": [
-    "Jim"
-    ]
+    "id": "162654031"
   },
   {
     "name": "Austin Stowell",
-    "id": "771373316",
-    "characters": [
-    "Ryan"
-    ]
+    "id": "771373316"
   }
   ],
   "alternate_ids": {
