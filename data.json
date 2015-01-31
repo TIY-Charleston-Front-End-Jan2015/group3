@@ -1,0 +1,60 @@
+var questions1Data =
+[
+  {"question": "Who are you watching the movie with?",
+    "A": "A. My significant other.",
+    "B": "B. My kids.",
+    "C": "C. My mom.",
+    "D": "D. I am alone and sad."
+  }
+]
+
+var questions2Data = [
+  {"question": "What are you in the mood for?",
+    "A": "A. Excitement!",
+    "B": "B. Love, hugs, and froo froo stuff.",
+    "C": "C. I want to pee in my pants. I put on Depends.",
+    "D": "D. I want to laugh until I forget about my problems."
+  },
+]
+
+var questions3Data = [
+  {"question": "Do you think Kevin Costner should still be acting?",
+    "A": "A. Yes!",
+    "B": "B. No!",
+    "C": "C. Who is Kevin Costner?",
+    "D": "D. I don't care."
+  },
+]
+
+var questions4Data = [
+  {"question": "Do you often wonder why Liam Neeson just doesn't lock up his daughter once and for all?",
+    "A": "A. Yes! Seriously. Why do they keep taking her?",
+    "B": "B. No.",
+    "C": "C. I don't know what you're talking about.",
+    "D": "D. I don't care about Liam Neeson and his daughter."
+  },
+
+]
+
+
+var mpaaData = {
+    "Kids": "Black and White, Paddington",
+      "All": "Hobbit, Taken3"
+
+
+}
+
+var genreData = {
+    "Adventure": "Adventure Movies",
+    "Romance": "Romance Movies",
+    "Thriller": "Horror/Thriller Movies",
+    "Comedy": "Comedy Movies"
+
+}
+
+var castData = {
+    "yesCostner": "Black and White",
+    "noCostner": "Taken3, Paddington, Wedding Ringer",
+    "yesLiam": "Taken3",
+    "noLiam": "Paddington, Black and White"
+}
