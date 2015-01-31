@@ -10,8 +10,8 @@ init: function() {
     flixPage.initStyling();
     flixPage.initEvents();
     ////flixPage.initGenre();
-    flixPage.initCostner();
-    flixPage.initLiam();
+    //flixPage.initCostner();
+    //flixPage.initLiam();
 
   },
 
@@ -35,10 +35,11 @@ initEvents: function () {
 
     $(".question2").addClass("active");
     _.each(movieData, function(currentItem){
-      if (currentItem.mpaa === "PG-13"){
+      if (currentItem.mpaa_rating === "PG-13"){
 
         moviePile.push(currentItem);
-        //console.log(moviePile);
+        users.push("Kids");
+
    };
 
     });
@@ -89,7 +90,7 @@ $('.D1').click(function (event){
 
  }),
 
-
+//OPTION A PUSHES DRAMA, ACTION, THRILLER INTO ARRAY MOVIEPILE2
 
   $('.A2').click(function(event){
     event.preventDefault();
@@ -99,10 +100,249 @@ $('.D1').click(function (event){
     $(".question3").addClass("active");
   _.each(moviePile, function(currentItem){
 
-    if (currentItem.genre === "Adventure"){
+      if (currentItem.genre == "Action"){
       moviePile2.push(currentItem);
+      console.log(moviePile2);
 
+  };
+
+      if (currentItem.genre == "Drama"){
+      moviePile2.push(currentItem);
+      console.log(moviePile2);
+
+};
+
+
+});
+
+});
+
+/// OPTION WILL FILTER OUT DRAMA, ROMANCE, FAMILY
+
+
+      $('.B2').click(function(event){
+        event.preventDefault();
+        console.log("B2")
+        $(".question2").hide();
+
+        $(".question3").addClass("active");
+        _.each(moviePile, function(currentItem){
+
+        if (currentItem.genre == "Romance"){
+        moviePile2.push(currentItem);
+
+        console.log(moviePile2);
+};
+
+        if (currentItem.genre == "Family"){
+        moviePile2.push(currentItem);
+        console.log(moviePile2);
+};
+
+        if (currentItem.genre == "Drama"){
+        moviePile2.push(currentItem);
+        console.log(moviePile2);
+
+};
+
+});
+});
+
+//// OPTION WILL FILTER OUT HORROR AND THRILLER
+
+$('.C2').click(function(event){
+  event.preventDefault();
+  console.log("C2");
+  $(".question2").hide();
+
+  _.each(users, function (currentItem){
+
+    if(currentItem === "Kids"){
+var badparent =prompt("Why are you trying to take your children to a scary movie? I'm calling DSS. Try again, Parent of the Year. Type ok.");
+    if (badparent === "ok") {
+        return; //break out of the function early
+    }
+    else {
+      alert("I'm calling the cops.");
+    }
+
+
+  };
+
+  });
+
+
+  $(".question3").addClass("active");
+_.each(moviePile, function(currentItem){
+
+    if (currentItem.genre == "Thriller"){
+    moviePile2.push(currentItem);
     console.log(moviePile2);
+
+};
+
+
+
+
+});
+
+});
+
+
+
+///WILL FILTER OUT COMEDY
+
+$('.D2').click(function(event){
+  event.preventDefault();
+  console.log("D2");
+  $(".question2").hide();
+  flixPage.question3();
+  $(".question3").addClass("active");
+_.each(moviePile, function(currentItem){
+
+    if (currentItem.genre == "Comedy"){
+    moviePile2.push(currentItem);
+    console.log(moviePile2);
+
+};
+
+
+});
+
+});
+
+
+
+
+
+///// OPTION ADDS COSTNER IF NOT ALREADY ADDED
+
+
+$('.A3').click(function(event){
+  event.preventDefault();
+  console.log("A3");
+  $(".question3").hide();
+
+  $(".question4").addClass("active");
+_.each(moviePile2, function(currentItem){
+    moviePile3.push(currentItem);
+    if (currentItem.abridged_cast == "Kevin Costner"){
+    moviePile3.push(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+/// OPTION REMOVES COSTNER IF ADDED
+
+$('.B3').click(function(event){
+  event.preventDefault();
+  console.log("B3");
+  $(".question3").hide();
+
+  $(".question4").addClass("active");
+_.each(moviePile2, function(currentItem){
+    moviePile3.push(currentItem);
+
+    if (currentItem.abridged_cast == "Kevin Costner"){
+    moviePile3.remove(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+
+$('.C3').click(function(event){
+  event.preventDefault();
+  console.log("A3");
+  $(".question3").hide();
+
+  $(".question4").addClass("active");
+_.each(moviePile2, function(currentItem){
+    moviePile3.push(currentItem);
+    if (currentItem.abridged_cast == "Kevin Costner"){
+    moviePile3.push(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+$('.D3').click(function(event){
+  event.preventDefault();
+  console.log("D3");
+  $(".question3").hide();
+
+  $(".question4").addClass("active");
+_.each(moviePile2, function(currentItem){
+    moviePile3.push(currentItem);
+    if (currentItem.abridged_cast == "Kevin Costner"){
+    moviePile3.push(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+$('.A4').click(function(event){
+  event.preventDefault();
+  console.log("A4");
+  $(".question4").hide();
+
+  $(".question1").addClass("active");
+_.each(moviePile3, function(currentItem){
+    moviePile4.push(currentItem);
+    if (currentItem.abridged_cast == "Liam Neeson"){
+    moviePile3.remove(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+
+$('.B4').click(function(event){
+  event.preventDefault();
+  console.log("B4");
+  $(".question4").hide();
+
+  $(".question1").addClass("active");
+_.each(moviePile3, function(currentItem){
+  moviePile4.push(currentItem);
+    if (currentItem.abridged_cast == "Liam Neeson"){
+    moviePile3.push(currentItem);
+    console.log(moviePile3);
+
+};
+
+});
+
+});
+
+
+$('.C4').click(function(event){
+  event.preventDefault();
+  console.log("C4");
+  $(".question4").hide();
+
+  $(".question1").addClass("active");
+_.each(moviePile3, function(currentItem){
+  moviePile4.push(currentItem);
+    if (currentItem.abridged_cast == "Liam Neeson"){
+    moviePile3.remove(currentItem);
+    console.log(moviePile3);
 
 };
 
@@ -113,96 +353,25 @@ $('.D1').click(function (event){
 
 
 
-      $('.B2').click(function(event){
-        event.preventDefault();
-        movieGenre = genreData.Romance;
-        console.log(movieGenre);
-});
-      $('.C2').click(function(event){
-        event.preventDefault();
-        movieGenre = genreData.Thriller;
-        console.log(movieGenre);
-});
-        $('.D2').click(function(event){
-        event.preventDefault();
-         movieGenre = genreData.Comedy;
-         console.log(movieGenre);
-});
-
-
-
-
-
-},
-
-///// 3rd Question costner
-
-initCostner: function () {
-
-
-$('.A3').click(function(event){
+$('.D4').click(function(event){
   event.preventDefault();
-  console.log("A");
+  console.log("D4");
+  $(".question4").hide();
 
-  costner = castData.noCostner;
-  console.log(costner);
+  $(".question1").addClass("active");
+_.each(moviePile3, function(currentItem){
+  moviePile4.push(currentItem);
+    if (currentItem.abridged_cast == "Liam Neeson"){
+    moviePile3.remove(currentItem);
+    console.log(moviePile3);
+
+};
+
 });
 
-  $('.B3').click(function(event){
-    event.preventDefault();
-    costner = castData.yesCostner;
-    console.log(costner);
 });
-
-  $('.C3').click(function(event){
-    event.preventDefault();
-    costner = castData.noCostner;
-    console.log(costner);
-});
-    $('.D3').click(function(event){
-    event.preventDefault();
-    costner = castData.yesCostner;
-    console.log(costner);
-});
-
-flixPage.question4();
-
 
 },
-
-initLiam: function () {
-
-var liam = "";
-
-$('.A4').click(function(event){
-  event.preventDefault();
-  liam = castData.noLiam;
-  console.log(liam);
-});
-  $('.B4').click(function(event){
-    event.preventDefault();
-    liam = castData.yesLiam;
-    console.log(liam);
-  });
-  $('.C4').click(function(event){
-    event.preventDefault();
-    liam = castData.noLiam;
-    console.log(liam);
-  });
-    $('.D4').click(function(event){
-    event.preventDefault();
-    liam = castData.noLiam;
-    console.log(liam);
-  });
-
-
-
-
-
-
-},
-
-
 
 question1: function () {
   var questTmpl = _.template(templates.question1);
