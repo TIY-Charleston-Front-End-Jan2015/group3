@@ -12,6 +12,7 @@ init: function() {
     ////flixPage.initGenre();
     //flixPage.initCostner();
     //flixPage.initLiam();
+   //flixPage.finalMovies();
 
   },
 
@@ -96,26 +97,50 @@ $('.D1').click(function (event){
     event.preventDefault();
     console.log("A2");
     $(".question2").hide();
-    flixPage.question3();
+
     $(".question3").addClass("active");
-  _.each(moviePile, function(currentItem){
 
-      if (currentItem.genre == "Action"){
-      moviePile2.push(currentItem);
-      console.log(moviePile2);
+    _.each(moviePile, function(currentItem){
+      _.each(currentItem.genre, function (genre, Index, Array){
+        if(genre == "Comedy") {
+          moviePile2.push(currentItem)
 
-  };
+        };
 
-      if (currentItem.genre == "Drama"){
-      moviePile2.push(currentItem);
-      console.log(moviePile2);
-
-};
+      });
 
 
-});
+    });
 
-});
+}),
+
+
+
+
+//  _.each(moviePile, function(currentItem){
+//
+//      if (currentItem.genre == "Action"){
+//      moviePile2.push(currentItem);
+//      console.log(moviePile2);
+
+  //};
+//
+  //    if (currentItem.genre == "Drama"){
+  //    moviePile2.push(currentItem);
+    //  console.log(moviePile2);
+
+//};
+
+//if (currentItem.genre == "Thriller"){
+//moviePile2.push(currentItem);
+//console.log(moviePile2);
+
+//};
+
+
+//});
+
+//});
 
 /// OPTION WILL FILTER OUT DRAMA, ROMANCE, FAMILY
 
@@ -155,17 +180,12 @@ $('.C2').click(function(event){
   console.log("C2");
   $(".question2").hide();
 
+/// Parental Alert
   _.each(users, function (currentItem){
 
     if(currentItem === "Kids"){
-var badparent =prompt("Why are you trying to take your children to a scary movie? I'm calling DSS. Try again, Parent of the Year. Type ok.");
-    if (badparent === "ok") {
-        return; //break out of the function early
-    }
-    else {
-      alert("I'm calling the cops.");
-    }
-
+    $(".badParent").css({"display": "block"});
+    $(".question3").hide();
 
   };
 
@@ -196,7 +216,7 @@ $('.D2').click(function(event){
   event.preventDefault();
   console.log("D2");
   $(".question2").hide();
-  flixPage.question3();
+  //flixPage.question3();
   $(".question3").addClass("active");
 _.each(moviePile, function(currentItem){
 
@@ -260,7 +280,7 @@ _.each(moviePile2, function(currentItem){
 
 $('.C3').click(function(event){
   event.preventDefault();
-  console.log("A3");
+  console.log("C3");
   $(".question3").hide();
 
   $(".question4").addClass("active");
@@ -294,22 +314,26 @@ _.each(moviePile2, function(currentItem){
 
 });
 
+
+//// LIAM NEESON
+
 $('.A4').click(function(event){
   event.preventDefault();
   console.log("A4");
   $(".question4").hide();
 
-  $(".question1").addClass("active");
+
 _.each(moviePile3, function(currentItem){
     moviePile4.push(currentItem);
     if (currentItem.abridged_cast == "Liam Neeson"){
-    moviePile3.remove(currentItem);
+    moviePile4.remove(currentItem);
     console.log(moviePile3);
 
 };
 
 });
-
+///call on final movies list
+    flixPage.finalMovies();
 });
 
 
@@ -318,16 +342,17 @@ $('.B4').click(function(event){
   console.log("B4");
   $(".question4").hide();
 
-  $(".question1").addClass("active");
+//WILL PUSH LIAM NEESON MOVIE IF NOT ALREADY PUSHED
 _.each(moviePile3, function(currentItem){
   moviePile4.push(currentItem);
     if (currentItem.abridged_cast == "Liam Neeson"){
-    moviePile3.push(currentItem);
+    moviePile4.push(currentItem);
     console.log(moviePile3);
 
 };
 
 });
+flixPage.finalMovies();
 
 });
 
@@ -341,13 +366,13 @@ $('.C4').click(function(event){
 _.each(moviePile3, function(currentItem){
   moviePile4.push(currentItem);
     if (currentItem.abridged_cast == "Liam Neeson"){
-    moviePile3.remove(currentItem);
-    console.log(moviePile3);
+    moviePile4.remove(currentItem);
+    console.log(moviePile4);
 
 };
 
 });
-
+flixPage.finalMovies();
 });
 
 
@@ -358,20 +383,42 @@ $('.D4').click(function(event){
   console.log("D4");
   $(".question4").hide();
 
-  $(".question1").addClass("active");
-_.each(moviePile3, function(currentItem){
+
+  _.each(moviePile3, function(currentItem){
   moviePile4.push(currentItem);
     if (currentItem.abridged_cast == "Liam Neeson"){
-    moviePile3.remove(currentItem);
-    console.log(moviePile3);
+    moviePile4.remove(currentItem);
+    console.log(moviePile4);
 
 };
 
 });
-
+flixPage.finalMovies();
 });
 
 },
+//// Section for final selections
+finalMovies: function (){
+  var finalTmpl = _.template(templates.movieFinals);
+  var html = "";
+  _.each(moviePile4, function (currentItem){
+    html += finalTmpl(currentItem);
+  });
+
+
+  $(".finalMovies").addClass("active");
+  $("section").append(html);
+  console.log(html);
+
+
+
+
+
+
+},
+
+
+////// Question Section
 
 question1: function () {
   var questTmpl = _.template(templates.question1);

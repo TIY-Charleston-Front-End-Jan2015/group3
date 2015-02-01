@@ -63,14 +63,25 @@ templates.question4 = [
 ].join("");
 
 
-templates.movieStack = [
-"<h3> <%= img %> </h3>",
-"<h4> <%= mpaa %> </h4>",
+templates.movieFinals = [
+"<div class='finalMovies'>",
+"<h3> <%= title%> </h3>",
+//"<p> <%= posters %> </p>",
+//"<h4> <%= mpaa_rating %> </h4>",
 "<h5> <%= synopsis%> </h5>",
-"<h6> <%= cast %> </h6>",
-"<h7> <%= reviews %> </h7>",
-
+//"<h6> <%= abridged_cast %> </h6>",
+//"<h7> <%= release_dates %> </h7>",
+"<div>"
 
 
 
 ].join("");
+
+//templates.badParent = [
+//"<div class='badParent'>",
+//"<h3>Why are you trying to take your children to a scary movie? I'm calling DSS. Try again, Parent of the Year. </h3>",
+
+//"<div>"
+
+
+//

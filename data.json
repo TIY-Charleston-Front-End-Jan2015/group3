@@ -1,43 +1,49 @@
 var moviePile= [];
 var moviePile2 = [];
 var moviePile3 = [];
-var moviePile4 = [];
+var moviePile4 = [
+  {"title": "Experimenter",
+    "synopsis": "In 1961, famed social psychologist Stanley Milgram designed a psychology experiment in which people think they're delivering electric shocks to an affable stranger strapped into a chair in another room. If this is your only choice, no movies out at this time are suitable for your viewing pleasure. Wait for this one. Theatrical Release: TBA. (C) Intrinsic Value Films."
+
+  }
+  ];
+
 var users = [];
 
 var questions1Data =
 [
   {"question": "Who are you watching the movie with?",
-    "A": "A. My significant other.",
-    "B": "B. My kids.",
-    "C": "C. My mom.",
-    "D": "D. I am alone and sad."
+    "A": "My significant other.",
+    "B": "My kids.",
+    "C": "My mom.",
+    "D": "I am alone and sad."
   }
 ]
 
 var questions2Data = [
   {"question": "What are you in the mood for?",
-    "A": "A. Excitement!",
-    "B": "B. Love, hugs, and froo froo stuff.",
-    "C": "C. I want to pee in my pants. I put on Depends.",
-    "D": "D. I want to laugh until I forget about my problems."
+    "A": "Excitement!",
+    "B": "Love, hugs, and froo froo stuff.",
+    "C": "I want to pee in my pants. I put on Depends.",
+    "D": "I want to laugh until I forget about my problems."
   },
 ]
 
 var questions3Data = [
   {"question": "Do you think Kevin Costner should still be acting?",
-    "A": "A. Yes!",
-    "B": "B. No!",
-    "C": "C. Who is Kevin Costner?",
-    "D": "D. I don't care."
+    "A": "Yes!",
+    "B": "No!",
+    "C": "Who is Kevin Costner?",
+    "D": "I don't care."
   },
 ]
 
 var questions4Data = [
   {"question": "Do you often wonder why Liam Neeson just doesn't lock up his daughter once and for all?",
-    "A": "A. Yes! Seriously. Why do they keep taking her?",
-    "B": "B. No.",
-    "C": "C. I don't know what you're talking about.",
-    "D": "D. I don't care about Liam Neeson and his daughter."
+    "A": "Yes! Seriously. Why do they keep taking her?",
+    "B": "No.",
+    "C": "I don't know what you're talking about.",
+    "D": "I don't care about Liam Neeson and his daughter."
   },
 
 ]
@@ -416,7 +422,7 @@ var movieData =[
   "id": "771370937",
   "title": "The Boy Next Door",
   "genre": [
-  "Thriller", "Action"
+  "Thriller",
   ],
   "year": 2015,
   "mpaa_rating": "R",
@@ -477,7 +483,7 @@ var movieData =[
   "id": "771357000",
   "title": "American Sniper",
   "genre": [
-  "Thriller", "Action", "Drama"
+   "Action"
   ],
   "year": 2015,
   "mpaa_rating": "R",
@@ -659,7 +665,7 @@ var movieData =[
   "id": "771373945",
   "title": "Taken 3",
   "genre": [
-  "Thriller", "Action"
+  "Thriller"
   ],
   "year": 2015,
   "mpaa_rating": "PG-13",
