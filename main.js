@@ -1,9 +1,3 @@
-var mpaaChoice ="";
-var movieGenre = "";
-var costner = "";
-var liam ="";
-
-
 var flixPage = {
 
 init: function() {
@@ -89,9 +83,9 @@ $('.D1').click(function (event){
 
 });
 
- }),
+ });
 
-//OPTION A PUSHES DRAMA, ACTION, THRILLER INTO ARRAY MOVIEPILE2
+//OPTION A PUSHES DRAMA, ACTION INTO ARRAY MOVIEPILE2
 
   $('.A2').click(function(event){
     event.preventDefault();
@@ -102,17 +96,19 @@ $('.D1').click(function (event){
 
     _.each(moviePile, function(currentItem){
       _.each(currentItem.genre, function (genre, Index, Array){
-        if(genre == "Comedy") {
+        if(genre == "Drama") {
+          moviePile2.push(currentItem)
+
+        };
+
+        if(genre == "Action") {
           moviePile2.push(currentItem)
 
         };
 
       });
-
-
     });
-
-}),
+});
 
 
 
@@ -152,25 +148,23 @@ $('.D1').click(function (event){
 
         $(".question3").addClass("active");
         _.each(moviePile, function(currentItem){
+          _.each(currentItem.genre, function (genre, Index, Array){
+            if(genre == "Drama") {
+              moviePile2.push(currentItem)
 
-        if (currentItem.genre == "Romance"){
-        moviePile2.push(currentItem);
+            };
 
-        console.log(moviePile2);
-};
+            if(genre == "Romance") {
+              moviePile2.push(currentItem)
 
-        if (currentItem.genre == "Family"){
-        moviePile2.push(currentItem);
-        console.log(moviePile2);
-};
+            };
+            if(genre == "Family") {
+              moviePile2.push(currentItem)
 
-        if (currentItem.genre == "Drama"){
-        moviePile2.push(currentItem);
-        console.log(moviePile2);
+            };
+          });
 
-};
-
-});
+        });
 });
 
 //// OPTION WILL FILTER OUT HORROR AND THRILLER
@@ -193,21 +187,25 @@ $('.C2').click(function(event){
 
 
   $(".question3").addClass("active");
-_.each(moviePile, function(currentItem){
+  _.each(moviePile, function(currentItem){
+    _.each(currentItem.genre, function (genre, Index, Array){
+      if(genre == "Horror") {
+        moviePile2.push(currentItem)
 
-    if (currentItem.genre == "Thriller"){
-    moviePile2.push(currentItem);
-    console.log(moviePile2);
+      };
 
-};
+      if(genre == "Thriller") {
+        moviePile2.push(currentItem)
+
+      };
 
 
 
+    });
 
+
+  });
 });
-
-});
-
 
 
 ///WILL FILTER OUT COMEDY
@@ -218,19 +216,19 @@ $('.D2').click(function(event){
   $(".question2").hide();
   //flixPage.question3();
   $(".question3").addClass("active");
-_.each(moviePile, function(currentItem){
+  _.each(moviePile, function(currentItem){
+    _.each(currentItem.genre, function (genre, Index, Array){
+      if(genre == "Comedy") {
+        moviePile2.push(currentItem)
 
-    if (currentItem.genre == "Comedy"){
-    moviePile2.push(currentItem);
-    console.log(moviePile2);
-
-};
+      };
 
 
+    });
+
+
+  });
 });
-
-});
-
 
 
 
@@ -395,8 +393,9 @@ $('.D4').click(function(event){
 });
 flixPage.finalMovies();
 });
-
 },
+
+
 //// Section for final selections
 finalMovies: function (){
   var finalTmpl = _.template(templates.movieFinals);
@@ -460,7 +459,7 @@ question4: function () {
 console.log(html);
 },
 
-}
+};
 
 $(document).ready(function(){
   flixPage.init();
