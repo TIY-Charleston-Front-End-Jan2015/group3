@@ -3,6 +3,7 @@ var templates = {};
 templates.question1 = [
   "<div class='question1'>",
   "<h2> <%= question %> </h2>",
+  "<div class=answerBlock>",
   "<p><button class='A1'>A</button>",
   " <%= A %> </p>",
   "<p><button class='B1'>B</button>",
@@ -11,6 +12,7 @@ templates.question1 = [
   " <%= C %> </p>",
   "<p><button class='D1'>D</button>",
   " <%= D %> </p>",
+  "</div>",
   "</div>"
 
 ].join("");
@@ -18,6 +20,7 @@ templates.question1 = [
 templates.question2 = [
   "<div class='question2'>",
   "<h2> <%= question %> </h2>",
+  "<div class=answerBlock>",
   "<p><button class='A2'>A</button>",
   " <%= A %> </p>",
   "<p><button class='B2'>B</button>",
@@ -26,6 +29,7 @@ templates.question2 = [
   " <%= C %> </p>",
   "<p><button class='D2'>D</button>",
   " <%= D %> </p>",
+  "</div>",
   "</div>"
 
 ].join("");
@@ -34,6 +38,7 @@ templates.question2 = [
 templates.question3 = [
 "<div class='question3'>",
   "<h2> <%= question %> </h2>",
+  "<div class=answerBlock>",
   "<p><button class='A3'>A</button>",
   " <%= A %> </p>",
   "<p><button class='B3'>B</button>",
@@ -42,6 +47,7 @@ templates.question3 = [
   " <%= C %> </p>",
   "<p><button class='D3'>D</button>",
   " <%= D %> </p>",
+  "</div>",
   "</div>"
 
 ].join("");
@@ -50,6 +56,7 @@ templates.question3 = [
 templates.question4 = [
 "<div class='question4'>",
   "<h2> <%= question %> </h2>",
+  "<div class=answerBlock>",
   "<p><button class='A4'>A</button>",
   " <%= A %> </p>",
   "<p><button class='B4'>B</button>",
@@ -58,6 +65,7 @@ templates.question4 = [
   " <%= C %> </p>",
   "<p><button class='D4'>D</button>",
   " <%= D %> </p>",
+  "</div>",
   "</div>"
 
 ].join("");
@@ -65,17 +73,23 @@ templates.question4 = [
 
 templates.movieFinals = [
 "<div class='finalMovies'>",
-"<h3> <%= title%> </h3>",
-//"<p> <%= posters %> </p>",
-//"<h4> <%= mpaa_rating %> </h4>",
-"<h5> <%= synopsis%> </h5>",
-//"<h6> <%= abridged_cast %> </h6>",
-//"<h7> <%= release_dates %> </h7>",
+// "<p><%= posters.thumbnail %> </p>",
+"<h3> <%= title %> </h3>",
+// "<p> <%= mpaa_rating %> </p>",
+// "<p><%= abridged_cast[name] %></p>",
+"<p> <%= synopsis %> </p>",
+// "<p> Rotten Tomatoes Rating (critics / audience): </p>",
+// "<p><%= ratings.critics_score %> / <%=ratings.audience_score %></p>",
 "<div>"
 
 
 
 ].join("");
+
+
+
+
+
 
 //templates.badParent = [
 //"<div class='badParent'>",
