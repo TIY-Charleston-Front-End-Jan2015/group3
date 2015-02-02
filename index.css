@@ -1,32 +1,70 @@
+body {
+/*   background-image: url("images/film-strip-background.jpg"); */
+
+  background: linear-gradient(rgba(137,136,135,0.4),
+  rgba(137,136,135,0.4)), url("images/film-strip-background.jpg");
+  background-size: cover;
+}
+
 section {
-  margin: 50px;
+  margin: 0px 80px 10px 80px;
   padding: 10px;
-  font-size: 22px;
+  min-height: 550px;
+  font-size: 1.375em;
   background-image: url("images/curtain.jpg");
   background-size: cover;
+  border-radius: 15px;
   color: white;
 }
 
 h1 {
   text-align: center;
-  font-size: 75px;
+  font-family: 'Limelight';
+  font-size: 4.25em;
+  padding-top: 35px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
 }
 
-p {
+header p {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.7em;
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 15px;
 }
 
 h2 {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.25em;
 
 }
 
-.button {
-  border-radius: 90%;
-  font-size: 45px;
-  margin: 0px 0px 0px 550px;
+p {
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Antic', sans-serif;
+  padding: 0 auto;
+}
 
+
+button {
+  border-radius: 100%;
+  font-size: 0.75em;
+  margin: 0px 0px 0px 60px;
+
+}
+
+.question1, .question2, .question3, .question4 {
+  padding: 50px 1.25em 10px 1.25em;
+}
+
+.answerBlock {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .question2, .question3, .question4 {
@@ -42,13 +80,24 @@ h2 {
   display: none;
 }
 
-.finalMovies{
+.finalMovies {
 
   display: block;
+
+
 }
+
+.finalMovies h3 {
+  font-family: 'Abril Fatface', cursive;
+}
+.finalMovies p {
+  text-align: left;
+  font-size: 1em;
+}
+
 .badParent {
   display: none;
-  font-size: 66px;
+  font-size: 4.125em;
   width: 800px;
   padding: 20px;
   background-color: black;
