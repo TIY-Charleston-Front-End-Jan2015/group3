@@ -3,40 +3,47 @@ var rRatingMovies = [];
 
 var movieSelector ={
 
+  _.each(movieData, function(currentItem){
+    if (currentItem.mpaa === "PG-13"){
+      var moviePile= currentItem
+    };
 
-  init: function() {
 
-    movieSelector.initStyling();
-    // movieSelector.initEvents();
-  },
 
-  initStyling: function() {
 
-    movieSelector.renderMovies(moviedata);
-
-  },
-
-// initEVents: function() {
+//   init: function() {
 //
+//     movieSelector.initStyling();
+//     // movieSelector.initEvents();
+//   },
+//
+//   initStyling: function() {
+//
+//     movieSelector.renderMovies(moviedata);
+//
+//   },
+//
+// // initEVents: function() {
+// //
+// // },
+//
+//
+// selectRating: function(val) {
+//   if(val.mpaa_rating === "PG" || val.mpaa_rating ==="PG-13") {
+//     pgRatingMovies.push(val.title);
+//
+//   } else if (val.mpaa_rating === "R") {
+//     rRatingMovies.push(val.title);
+//   }
 // },
-
-
-selectRating: function(val) {
-  if(val.mpaa_rating === "PG" || val.mpaa_rating ==="PG-13") {
-    pgRatingMovies.push(val.title);
-
-  } else if (val.mpaa_rating === "R") {
-    rRatingMovies.push(val.title);
-  }
-},
-
-renderMovies: function (movieObject) {
-  console.log(movieObject);
-
-   _.each(movieObject,movieSelector.selectRating);
-
-
- }
+//
+// renderMovies: function (movieObject) {
+//   console.log(movieObject);
+//
+//    _.each(movieObject,movieSelector.selectRating);
+//
+//
+//  }
 };
 
 

@@ -30,7 +30,7 @@ initEvents: function () {
 
     $(".question2").addClass("active");
     _.each(movieData, function(currentItem){
-      if (currentItem.mpaa_rating === "PG-13"){
+      if (currentItem.mpaa_rating === "PG-13" || currentItem.mpaa_rating === "PG") {
 
         moviePile.push(currentItem);
         users.push("Kids");
